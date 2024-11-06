@@ -1,0 +1,48 @@
+Weather App 🌦️
+This is a web-based weather application that allows users to check the current weather conditions in any city worldwide. The app fetches real-time data from the OpenWeather API and displays information like temperature, weather description, humidity, and wind speed.
+
+Features
+Real-Time Weather Data: Get accurate weather information by simply entering a city name.
+Dynamic Display: Weather conditions are represented visually with icons, giving a quick snapshot of the weather (clear, rainy, cloudy, etc.).
+Responsive Design: Works seamlessly on both desktop and mobile devices.
+Error Handling: Displays user-friendly messages for invalid city names or connectivity issues.
+
+Technologies Used
+JavaScript: Handles fetching data from the API and updating the interface.
+HTML & CSS: Provides a structured and visually engaging layout.
+OpenWeather API: Supplies current weather data for cities across the globe.
+Installation
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/yourusername/weather-app.git
+Navigate to the project folder:
+bash
+Copy code
+cd weather-app
+Open the index.html file in your browser to view the app.
+Usage
+Enter the name of the city in the search bar.
+Click the search button or press Enter.
+The app will display the current weather conditions for the entered city, including:
+Temperature (°C)
+Weather description
+Humidity
+Wind speed
+API Key Setup
+To use the app with your own OpenWeather API key:
+
+Sign up at OpenWeather and obtain an API key.
+Replace the API key in the JavaScript file with your own key:
+javascript
+Copy code
+url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city_name}&appid=YOUR_API_KEY`;
+Project Structure
+index.html: Main structure of the web app.
+weather.js: JavaScript file containing the logic for fetching and displaying weather data.
+weatherApp.css: Stylesheet for the app’s design and layout.
+/images: Folder containing icons used to represent weather conditions (e.g., clear, rain, clouds).
+Future Improvements
+Additional Weather Data: Include extended forecasts, sunrise/sunset times, and daily high/low temperatures.
+Enhanced Error Handling: More specific messages for network errors or invalid API key responses.
+Loading Animation: Add a loading animation to improve the user experience while data is being fetched.
